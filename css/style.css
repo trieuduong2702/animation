@@ -1,0 +1,81 @@
+
+.anh{
+	width: 33.33%;
+	float: left;
+}
+.anh img{
+	border: 5px solid red;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+#c1{
+	margin-bottom: 50px;
+}
+
+.clearfix{
+	margin-left: 7%;
+	width: 1200px;
+}
+.mo img{
+	opacity: 0.7;
+	transition: opacity 0.5s ease-out;
+
+}
+.mo img:hover{
+	opacity: 1;
+}
+.bong img:hover{
+	transform: translate(0,10px);
+	box-shadow: 0 -10px 10px 0 rgba(0,0,0,0.2);
+}
+.bong img{
+	transition: all 0.5s linear;	
+}
+footer{
+	position: absolute;
+	padding-bottom: 20px;
+	padding-right: 20px;
+}
+@keyframes title{
+	0%  {background-color: #EF7126; color: #F9E559;}
+	25%  {background-color: #6F3662; color: #FFFFFF;}
+	50%  {background-color: #9F6164; color: #F8DEBD;}
+	75%  {background-color: #44B3C2; color: #FFFFFF;}
+	100% {background-color: #218C8D; color: #F9E559;}
+}
+h1{
+	margin: 25px 0 10px 0;
+	font-size: 3em;
+	line-height: 1.5em;
+	font-family: georgia;
+	letter-spacing: 0.2em;
+	color: #8e0b00;
+	text-align: center;
+	animation: title 10s ease infinite;
+}
+
+
+.letter {
+	animation: fade 3.5s infinite;
+	}
+
+@keyframes fade {
+	0%{opacity: 0;}
+	10%{opacity: 1;}
+	20%{opacity: 1;}
+	80%{opacity: 0.02;}
+	100%{opacity: 0;}
+}
+
+@keyframes move{
+	0%{right: 20px; bottom: 5px;}
+	10%{right: 75px; bottom: 5px;}
+	20%{right: 75px; bottom: 5px;}
+	100%{ right: 500px; bottom: 5px;}
+}
+footer{
+	animation: move 3.5s infinite;
+}
+span{
+	font-weight: bold;
+}
